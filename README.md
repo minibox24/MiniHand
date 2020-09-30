@@ -26,9 +26,9 @@ client.run('TOKEN')
 discord.py cogs-like style
 
 ```py
-from minihand.cmd import commands
+from minihand.commands import command
 
-@commands.command(name="안녕", aliases=["ㅎㅇ", "hi"], shorthelp="안녕커맨드")
+@command(name="안녕", aliases=["ㅎㅇ", "hi"], shorthelp="안녕커맨드")
 def Hello(context):
     """'안녕!' 이라고 대답해주는 커맨드 입니다."""
     context.send("안녕!")
@@ -36,7 +36,7 @@ def Hello(context):
 
 ## 커맨드라인 사용법
 ```py
-@commands.command()
+@command()
 def test(ctx, arg1, kwarg="없음"):
     ctx.send(arg1 + kwarg)
 ```

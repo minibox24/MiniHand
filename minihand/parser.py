@@ -57,6 +57,9 @@ def Parser(text):
     for d in dellst:
         parsing.remove(d)
 
+    if len(parsing) == 1:
+        parsing.append('')
+
     return parsing
 
 if __name__ == "__main__":
